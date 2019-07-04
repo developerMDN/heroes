@@ -64,4 +64,18 @@ constructor() {
   getHeroes() {
     return this.heroes;
   }
+
+  getHeroe(idx: string) {
+    return this.heroes[idx];
+  }
+
+  buscarHeroes(nombre: string) {
+
+     return this.heroes.filter((heroe) => {
+       console.log(nombre);
+      return heroe.nombre.includes(nombre);
+    });
+
+  }
+
 }

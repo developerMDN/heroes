@@ -18,13 +18,19 @@ export class HeroesComponent implements OnInit {
       this.heroesService.getHeroes();
   }
 
-  verHeroe(idx: number)
-  {
+  verHeroe(idx: number) {
     this.router.navigate(['/heroe', idx]);
   }
+
+  getHeroes()
+  {
+    return this.heroes;
+  }
+
 }
 
 export interface Heroe {
+  id: string;
   nombre: string;
   bio: string;
   img: string;
