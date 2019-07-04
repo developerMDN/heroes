@@ -72,7 +72,6 @@ constructor() {
   buscarHeroes(nombre: string) {
 
      return this.heroes.filter((heroe) => {
-       console.log(nombre);
       return heroe.nombre.includes(nombre);
     });
 
