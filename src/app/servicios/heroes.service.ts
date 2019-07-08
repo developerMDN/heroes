@@ -71,8 +71,8 @@ constructor() {
 
   buscarHeroes(nombre: string) {
 
-     return this.heroes.filter((heroe) => {
-      return heroe.nombre.includes(nombre);
+     return this.heroes.filter( (heroe) => {
+      return heroe.nombre.toUpperCase().includes(nombre.toUpperCase());
     });
 
   }
